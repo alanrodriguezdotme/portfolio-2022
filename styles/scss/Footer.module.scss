@@ -1,0 +1,52 @@
+@import "base";
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+}
+
+.branding {
+  flex-grow: 1;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5em;
+  font-size: 1.25em;
+
+  .title {
+    font-weight: 600;
+    color: $text;
+    font-family: $fontSerif;
+  }
+  .subtitle {
+    color: $primary;
+  }
+}
+
+.links {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.link {
+  padding: 8px;
+
+  a svg {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+  }
+
+  &:hover {
+    a svg {
+      fill: $secondary;
+
+      transform: scale(1.2);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    }
+  }
+}

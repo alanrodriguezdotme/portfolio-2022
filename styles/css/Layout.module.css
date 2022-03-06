@@ -1,0 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300;600&family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
+.container { background-color: #232946; color: #fffffe; position: relative; z-index: 1; }
+
+.main { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 100%; }

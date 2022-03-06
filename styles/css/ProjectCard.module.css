@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300;600&family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
+.projectCard { width: 282px; height: 282px; border-radius: 8px; -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; background-size: cover; background-position: top center; cursor: pointer; overflow: hidden; }
+
+.projectCardInfo { width: 100%; height: 100%; opacity: 0; background: black; background: linear-gradient(34deg, rgba(0, 0, 0, 0.716) 0%, rgba(0, 0, 0, 0.968) 100%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 20px; }
+
+.projectCardInfo .company { color: #bbeedf; padding: 0 20px; }
+
+.projectCardInfo .title { color: #fffffe; text-align: center; padding: 0 20px; }
+
+.projectCardInfo .subtitle { color: #b8c1ec; text-align: center; padding: 0 40px; }

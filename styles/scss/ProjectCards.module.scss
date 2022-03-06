@@ -1,0 +1,16 @@
+@import "base";
+
+.projectCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.projectCardsWrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}

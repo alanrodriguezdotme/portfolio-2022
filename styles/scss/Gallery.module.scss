@@ -1,0 +1,61 @@
+@import "base";
+
+.gallery {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    34deg,
+    rgba(0, 0, 0, 0.716) 0%,
+    rgba(0, 0, 0, 0.968) 100%
+  );
+  overflow: hidden;
+  z-index: 2;
+
+  .clickOutside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}
+
+.imagesWrapper {
+  position: absolute;
+  height: 80vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+}
+
+.imageWrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+
+  .buttonWrapper {
+    width: 50px;
+    height: 100%;
+
+    .button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .image {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+  }
+}

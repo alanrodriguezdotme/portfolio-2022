@@ -1,0 +1,13 @@
+@import "base";
+
+.container {
+  background-color: $bgColor;
+  color: $text;
+  position: relative;
+  z-index: 1;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+}

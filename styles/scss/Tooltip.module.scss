@@ -1,0 +1,25 @@
+@import "base";
+
+.tooltipWrapper {
+  position: relative;
+  width: fit-content;
+
+  &:hover {
+    z-index: 100;
+  }
+}
+
+.tooltip {
+  background: $secondary;
+  color: $bgColor;
+  padding: 4px 8px;
+  border-radius: 3px;
+  position: absolute;
+  white-space: pre;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  max-width: 200px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}

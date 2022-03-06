@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300;600&family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
+.gallery { position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; height: 100vh; background: black; background: linear-gradient(34deg, rgba(0, 0, 0, 0.716) 0%, rgba(0, 0, 0, 0.968) 100%); overflow: hidden; z-index: 2; }
+
+.gallery .clickOutside { position: absolute; width: 100%; height: 100%; z-index: 3; }
+
+.imagesWrapper { position: absolute; height: 80vh; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; margin: 0; z-index: 5; }
+
+.imageWrapper { width: 100vw; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.imageWrapper .buttonWrapper { width: 50px; height: 100%; }
+
+.imageWrapper .buttonWrapper .button { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.imageWrapper .image { position: relative; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; height: 100%; }

@@ -1,0 +1,47 @@
+@import "base";
+
+.projectCard {
+  width: 282px;
+  height: 282px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-size: cover;
+  background-position: top center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.projectCardInfo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    34deg,
+    rgba(0, 0, 0, 0.716) 0%,
+    rgba(0, 0, 0, 0.968) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .company {
+    color: $secondary;
+    padding: 0 20px;
+  }
+
+  .title {
+    color: $text;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .subtitle {
+    color: $primary;
+    text-align: center;
+    padding: 0 40px;
+  }
+}
