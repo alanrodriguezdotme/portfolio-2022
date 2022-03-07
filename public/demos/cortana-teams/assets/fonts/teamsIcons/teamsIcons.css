@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Teams Icons Light';
+	src: url('./TeamsAssets-Light.ttf') format('embedded-opentype'), 
+	/* url('./TeamsAssets-Light.woff') format('woff'),  */
+	url('./TeamsAssets-Light.ttf') format('truetype');
+	/* url('.TeamsAssets-Light.svg#TeamsAssets-Light') format('svg'); */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Teams Icons';
+	src: url('./TeamsAssets-Regular.ttf') format('embedded-opentype'), 
+	/* url('./TeamsAssets-Regular.woff') format('woff'),  */
+	url('./TeamsAssets-Regular.ttf') format('truetype');
+	/* url('.TeamsAssets-Regular.svg#TeamsAssets-Regular') format('svg'); */
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-teams { font-family: 'Teams Icons'; }
+.icon-teams-light { font-family: 'Teams Icons Light'; }
+
+.icon-teams-light,
+.icon-teams {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+}
+
+
+.icon-teams-light-notes:before { content: "\E951"; }
+.icon-teams-light-chat:before { content: "\E300"; }
+.icon-teams-light-addPeople:before { content: "\E20A"; }
+.icon-teams-light-info:before { content: "\E451"; }
+.icon-teams-light-fullscreen:before { content: "\E980"; }
+.icon-teams-light-settings:before { content: "\E60A"; }
+.icon-teams-light-fontStyles:before { content: "\E936"; }
+.icon-teams-light-attachment:before { content: "\E124"; }
+.icon-teams-light-smiley:before { content: "\E30D"; }
+.icon-teams-light-gif:before { content: "\E94B"; }
+.icon-teams-light-sticker:before { content: "\E987"; }
+.icon-teams-light-schedule:before { content: "\E50A"; }
+.icon-teams-light-more:before { content: "\E94F"; }
+.icon-teams-light-send:before { content: "\E323"; }
+.icon-teams-light-lightBulb:before { content: "\E442"; }
+.icon-teams-light-cancel:before { content: "\E413"; }
+.icon-teams-light-clock:before { content: "\E115"; }
+.icon-teams-light-check:before { content: "\E412"; }
+.icon-teams-light-eye:before { content: "\E329"; }
+
+.icon-teams-bell:before { content: "\E625"; }
+.icon-teams-chat:before { content: "\E300"; }
+.icon-teams-teams:before { content: "\E20B"; }
+.icon-teams-meetings:before { content: "\E503"; }
+.icon-teams-phone:before { content: "\E705"; }
+.icon-teams-files:before { content: "\E306"; }
+.icon-teams-more:before { content: "\E94F"; }
+.icon-teams-camera:before { content: "\E102"; }
+.icon-teams-shareScreen:before { content: "\E120"; }

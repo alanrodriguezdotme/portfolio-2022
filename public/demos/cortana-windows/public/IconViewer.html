@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="google" value="notranslate">
+    <link rel="stylesheet" href="css/segoeMDL/fullMDL.css">
+    <title>Icon Viewer</title>
+
+    <style>
+        body{
+            font-family: "Segoe-UI", Verdana;
+        }
+
+        @font-face {
+            font-family: 'FabricMDL2Icons';
+            src: url('http://localhost:3000/public/css/segoeMDL/FullMDL2.2.17.woff') format('woff'),
+                 url('http://localhost:3000/public/css/segoeMDL/FullMDL2.2.17.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        header {
+            font-size: 42px;
+            color: #333;
+            padding: 25px;
+        }
+
+        .glyphBlock {
+            background-color: #eee;
+            display: inline-block;
+            margin: 20px;
+            width: 150px;
+            height: 120px;
+        }
+
+
+        .iconText {
+            font-size: 14px;
+            color: #666;
+            overflow-wrap: break-word;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0 0 0;
+        }
+
+        .icon-win {
+            font-size: 24px
+        }
+
+        .glyphContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0 0 0;
+        }
+
+        body {
+            overflow: auto !important;
+        }
+    </style>
+
+    <script>
+        // Automatically render all the fonts we have in webfontstyles.css
+        var iconRegEx = /\.icon-win-(\w+)::before/;
+
+        var parseCSS = function(){
+            var icons = [];
+
+            for (var i = 0; i < document.styleSheets.length; i++) {
+                var sheet = document.styleSheets[i];
+                for (var j = 0; j < sheet.cssRules.length; j++) {
+                    var rule = sheet.cssRules[j];
+                    if (iconRegEx.test(rule.cssText)) {
+                        icons.push(iconRegEx.exec(rule.cssText)[1]);
+                    }
+                }
+            }
+
+            addIcons(icons);
+        };
+
+        var addIcons = function(iconList){
+
+            for (var glyphIndex = 0; glyphIndex < iconList.length; glyphIndex++) {
+                var glyphBlock = document.createElement("div");
+                glyphBlock.className = "glyphBlock";
+                var glyphContainer = document.createElement("div");
+                glyphContainer.className = "glyphContainer";
+                glyphBlock.appendChild(glyphContainer);
+                var iconSpan = document.createElement("span");
+                iconSpan.className = "icon-win icon-win-" + iconList[glyphIndex];
+                glyphContainer.appendChild(iconSpan);
+                iconSpan.innerText = " ";
+                var textSpan = document.createElement("span");
+                textSpan.className = "iconText";
+                glyphContainer.appendChild(textSpan);
+                textSpan.innerText = iconList[glyphIndex];
+                document.body.appendChild(glyphBlock);
+            }
+        };
+
+        window.onload = () => { parseCSS(); }
+    </script>
+</head>
+<body>
+    <header>FullMDL2 Icon Viewer</header>
+</body>
+</html>

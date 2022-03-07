@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import _ from "lodash";
+import Head from "next/head";
 import { projectsData } from "../../constants/projectsData";
 import styles from "../../styles/css/ProjectPage.module.css";
 import Header from "../../components/Header";
@@ -32,6 +33,12 @@ export default function ProjectPage({ project }) {
 
   return (
     <div>
+      <Head>
+        <title>
+          Alan Rodriguez - Designer/Developer/Maker - {project.title}
+        </title>
+        <meta name="description" content={project.description} />
+      </Head>
       <Header showAbout={showAbout} setShowAbout={setShowAbout} interiorPage />
       <div className={styles.projectPage}>
         <div className={styles.projectPageHeader}>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 260 462.2" style="enable-background:new 0 0 260 462.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FAFAFA;}
+	.st2{fill:#666666;}
+	.st3{fill:#2AB0E9;}
+	.st4{opacity:0;}
+	.st5{clip-path:url(#SVGID_2_);fill:#42B8E9;}
+	.st6{clip-path:url(#SVGID_4_);fill:#42B8E9;}
+	.st7{clip-path:url(#SVGID_6_);fill:#42B8E9;}
+	.st8{opacity:0.2;}
+	.st9{fill:#F9F9F9;}
+	.st10{clip-path:url(#SVGID_10_);fill:#42B8E9;}
+	.st11{clip-path:url(#SVGID_12_);fill:#42B8E9;}
+	.st12{clip-path:url(#SVGID_14_);fill:#42B8E9;}
+	.st13{fill:#333333;}
+	.st14{fill:#CCCCCC;}
+	.st15{fill:#A4C644;}
+	.st16{font-family:'SegoeUI';}
+	.st17{font-size:15.1667;}
+	.st18{fill:#F6F6F6;}
+	.st19{clip-path:url(#SVGID_20_);fill:#D1D3D4;}
+	.st20{fill:#999999;}
+</style>
+<font horiz-adv-x="2048">
+<!-- Segoe is a trademark of the Microsoft group of companies. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="SegoeUI" units-per-em="2048" underline-position="-178" underline-thickness="119"/>
+<missing-glyph horiz-adv-x="1322" d="M166,0l0,1398l990,0l0,-1398M314,148l694,0l0,1102l-694,0z"/>
+<glyph unicode="I" horiz-adv-x="545" d="M356,0l-168,0l0,1434l168,0z"/>
+<glyph unicode="b" horiz-adv-x="1204" d="M334,148l-4,0l0,-148l-164,0l0,1516l164,0l0,-672l4,0C415,980 533,1048 688,1048C819,1048 922,1002 997,911C1071,819 1108,696 1108,542C1108,371 1066,234 983,131C900,28 786,-24 641,-24C506,-24 403,33 334,148M330,561l0,-143C330,333 358,262 413,203C468,144 537,114 622,114C721,114 799,152 856,228C912,304 940,410 940,545C940,659 914,748 861,813C808,878 737,910 647,910C552,910 475,877 417,811C359,744 330,661 330,561z"/>
+<glyph unicode="n" horiz-adv-x="1159" d="M1016,0l-164,0l0,584C852,801 773,910 614,910C532,910 464,879 411,818C357,756 330,678 330,584l0,-584l-164,0l0,1024l164,0l0,-170l4,0C411,983 523,1048 670,1048C782,1048 868,1012 927,940C986,867 1016,763 1016,626z"/>
+<glyph unicode="o" horiz-adv-x="1200" d="M594,-24C443,-24 322,24 232,120C141,215 96,342 96,500C96,672 143,806 237,903C331,1000 458,1048 618,1048C771,1048 890,1001 976,907C1061,813 1104,683 1104,516C1104,353 1058,222 966,124C873,25 749,-24 594,-24M606,910C501,910 417,874 356,803C295,731 264,632 264,506C264,385 295,289 357,219C419,149 502,114 606,114C712,114 794,148 851,217C908,286 936,383 936,510C936,638 908,737 851,806C794,875 712,910 606,910z"/>
+<glyph unicode="x" horiz-adv-x="940" d="M914,1024l-344,-518l338,-506l-191,0l-201,332C503,353 488,379 471,410l-4,0C464,404 448,378 420,332l-205,-332l-189,0l349,502l-334,522l191,0l198,-350C445,648 459,621 473,594l4,0l256,430z"/>
+</font>
+
+	<g>
+	<rect x="0" class="st0" width="260" height="462.2"/>
+	<rect x="0" y="58.5" class="st14" width="260" height="0.7"/>
+	<rect x="0" class="st9" width="260" height="57.8"/>
+	<rect x="0" y="427.6" class="st15" width="260" height="34.7"/>
+	<text transform="matrix(1 0 0 1 52.1922 43.0048)"><tspan x="0" y="0" class="st13 st16 st17">I</tspan><tspan x="3.9" y="0" class="st13 st16 st17">n</tspan><tspan x="12.5" y="0" class="st13 st16 st17">b</tspan><tspan x="21.5" y="0" class="st13 st16 st17">o</tspan><tspan x="30.2" y="0" class="st13 st16 st17">x</tspan></text>
+	<rect x="0" class="st15" width="260" height="17.3"/>
+	<path class="st0" d="M130.3,436.2c-4.8,0-8.7,3.9-8.7,8.7c0,4.8,3.9,8.7,8.7,8.7c4.8,0,8.7-3.9,8.7-8.7
+		C138.9,440.1,135.1,436.2,130.3,436.2 M130.3,452.1c-4,0-7.2-3.2-7.2-7.2c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2
+		C137.5,448.9,134.3,452.1,130.3,452.1"/>
+	<path class="st0" d="M209.7,438.4v13l-13,0v-13H209.7 M209.7,436.9h-13c-0.8,0-1.4,0.6-1.4,1.4v13c0,0.8,0.6,1.4,1.4,1.4h13
+		c0.8,0,1.4-0.6,1.4-1.4v-13C211.2,437.6,210.5,436.9,209.7,436.9"/>
+	<path class="st0" d="M63.8,437.7v14.4l-12.3-7.2L63.8,437.7 M63.8,436.2c-0.3,0-0.5,0.1-0.7,0.2l-12.3,7.2
+		c-0.4,0.3-0.7,0.7-0.7,1.2c0,0.5,0.3,1,0.7,1.2l12.3,7.2c0.2,0.1,0.5,0.2,0.7,0.2c0.2,0,0.5-0.1,0.7-0.2c0.5-0.3,0.7-0.7,0.7-1.3
+		v-14.4c0-0.5-0.3-1-0.7-1.3C64.3,436.3,64.1,436.2,63.8,436.2"/>
+	<polygon class="st2" points="240.9,44.8 242,44.8 242,38.1 248.6,38.1 248.6,37 242,37 242,30.3 240.9,30.3 240.9,37 234.2,37 
+		234.2,38.1 240.9,38.1 	"/>
+	<path class="st2" d="M209,39.8c1.1,0,2.1-0.4,2.9-1l6,6c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.3-0.1,0.4-0.2c0.2-0.2,0.2-0.5,0-0.7l-6-6
+		c0.6-0.8,1-1.8,1-2.9c0-2.6-2.1-4.6-4.6-4.6c-2.6,0-4.6,2.1-4.6,4.6S206.4,39.8,209,39.8 M209,31.6c2,0,3.6,1.6,3.6,3.6
+		s-1.6,3.6-3.6,3.6c-2,0-3.6-1.6-3.6-3.6S207,31.6,209,31.6"/>
+	<rect x="0" y="392.9" class="st1" width="260" height="34.7"/>
+	<path class="st2" d="M210.1,418.2h1.3c0-3.3,2.7-5.9,5.9-5.9c3.3,0,5.9,2.6,5.9,5.9h1.3c0-3-1.9-5.6-4.5-6.7
+		c1.5-0.9,2.5-2.6,2.5-4.5c0-2.9-2.4-5.3-5.3-5.3c-2.9,0-5.3,2.4-5.3,5.3c0,1.9,1,3.6,2.5,4.5C212,412.6,210.1,415.2,210.1,418.2
+		 M213.4,407c0-2.2,1.8-3.9,3.9-3.9c2.2,0,3.9,1.8,3.9,3.9s-1.8,3.9-3.9,3.9C215.1,411,213.4,409.2,213.4,407"/>
+	<path class="st13" d="M51.1,404.4H35.4h-1.2v1.8v11.4h1.2h15.6h1.2v-11.4v-1.8H51.1z M50.7,405.6l-7.5,3.5l-7.5-3.5H50.7z
+		 M51.1,416.4H35.4v-9.7l7.8,3.7l7.8-3.7V416.4z"/>
+	<path class="st2" d="M122,419h0.6h0.6h14.1h0.6h0.6v-15.3h-0.6h-0.6h-14.1h-0.6H122V419z M123.2,408.8h14.1v8.9h-14.1V408.8z
+		 M137.3,407.5h-14.1v-2.6h14.1V407.5z"/>
+	<rect x="129.6" y="415.2" class="st2" width="1.3" height="1.3"/>
+	<rect x="125.8" y="415.2" class="st2" width="1.3" height="1.3"/>
+	<rect x="133.5" y="412.6" class="st2" width="1.3" height="1.3"/>
+	<rect x="129.6" y="412.6" class="st2" width="1.3" height="1.3"/>
+	<rect x="125.8" y="412.6" class="st2" width="1.3" height="1.3"/>
+	<rect x="133.5" y="410.1" class="st2" width="1.3" height="1.3"/>
+	<rect x="129.6" y="410.1" class="st2" width="1.3" height="1.3"/>
+	<rect x="14" y="33.5" class="st2" width="14.5" height="0.9"/>
+	<rect x="14" y="37.1" class="st2" width="14.5" height="0.9"/>
+	<rect x="14" y="40.7" class="st2" width="14.5" height="0.9"/>
+	<g>
+		<defs>
+			<rect id="SVGID_17_" x="200" y="37.8" width="23.1" height="23.1"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+</g>
+</svg>

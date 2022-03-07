@@ -1,0 +1,392 @@
+/**
+ * Responsive utilities
+ * Based on defined variables, control visibility and size for different displays
+ */
+
+
+//== Responsive visiblity classes
+//
+
+// Hide everything by default
+.ms-u-hiddenSm, .ms-u-hiddenMd, .ms-u-hiddenLg, .ms-u-visibleSm, .ms-u-visibleMd, .ms-u-visibleLg {
+  display: none !important;
+}
+
+// Visible on small
+@media (max-width: @screen-sm-max) {
+  .ms-u-visibleSm, .ms-u-hiddenMd, .ms-u-hiddenLg {
+    display: inherit !important;
+  }
+}
+
+// Visible on medium
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .ms-u-visibleMd, .ms-u-hiddenSm, .ms-u-hiddenLg {
+    display: inherit !important;
+  }
+}
+
+// Visible on large
+@media (min-width: 1200px) {
+  .ms-u-visibleLg, .ms-u-hiddenSm, .ms-u-hiddenMd {
+    display: inherit !important;
+  }
+}
+
+
+//== Responsive sizes
+//
+// These are all based on a 12 column grid. For example,
+// ms-u-sm6 sets the width to 50% (6/12) on small screens.
+
+// Small screens (default)
+.ms-u-sm12 {
+  width: 100%;
+}
+.ms-u-sm11 {
+  width: 91.66666666666666%;
+}
+.ms-u-sm10 {
+  width: 83.33333333333334%;
+}
+.ms-u-sm9 {
+  width: 75%;
+}
+.ms-u-sm8 {
+  width: 66.66666666666666%;
+}
+.ms-u-sm7 {
+  width: 58.333333333333336%;
+}
+.ms-u-sm6 {
+  width: 50%;
+}
+.ms-u-sm5 {
+  width: 41.66666666666667%;
+}
+.ms-u-sm4 {
+  width: 33.33333333333333%;
+}
+.ms-u-sm3 {
+  width: 25%;
+}
+.ms-u-sm2 {
+  width: 16.666666666666664%;
+}
+.ms-u-sm1 {
+  width: 8.333333333333332%;
+}
+.ms-u-smPull12 {
+  right: 100%;
+}
+.ms-u-smPull11 {
+  right: 91.66666666666666%;
+}
+.ms-u-smPull10 {
+  right: 83.33333333333334%;
+}
+.ms-u-smPull9 {
+  right: 75%;
+}
+.ms-u-smPull8 {
+  right: 66.66666666666666%;
+}
+.ms-u-smPull7 {
+  right: 58.333333333333336%;
+}
+.ms-u-smPull6 {
+  right: 50%;
+}
+.ms-u-smPull5 {
+  right: 41.66666666666667%;
+}
+.ms-u-smPull4 {
+  right: 33.33333333333333%;
+}
+.ms-u-smPull3 {
+  right: 25%;
+}
+.ms-u-smPull2 {
+  right: 16.666666666666664%;
+}
+.ms-u-smPull1 {
+  right: 8.333333333333332%;
+}
+.ms-u-smPull0 {
+  right: 0%;
+}
+.ms-u-smPush12 {
+  left: 100%;
+}
+.ms-u-smPush11 {
+  left: 91.66666666666666%;
+}
+.ms-u-smPush10 {
+  left: 83.33333333333334%;
+}
+.ms-u-smPush9 {
+  left: 75%;
+}
+.ms-u-smPush8 {
+  left: 66.66666666666666%;
+}
+.ms-u-smPush7 {
+  left: 58.333333333333336%;
+}
+.ms-u-smPush6 {
+  left: 50%;
+}
+.ms-u-smPush5 {
+  left: 41.66666666666667%;
+}
+.ms-u-smPush4 {
+  left: 33.33333333333333%;
+}
+.ms-u-smPush3 {
+  left: 25%;
+}
+.ms-u-smPush2 {
+  left: 16.666666666666664%;
+}
+.ms-u-smPush1 {
+  left: 8.333333333333332%;
+}
+.ms-u-smPush0 {
+  left: 0%;
+}
+
+// Medium screens
+@media (min-width: @screen-md-min) {
+  .ms-u-md12 {
+    width: 100%;
+  }
+  .ms-u-md11 {
+    width: 91.66666666666666%;
+  }
+  .ms-u-md10 {
+    width: 83.33333333333334%;
+  }
+  .ms-u-md9 {
+    width: 75%;
+  }
+  .ms-u-md8 {
+    width: 66.66666666666666%;
+  }
+  .ms-u-md7 {
+    width: 58.333333333333336%;
+  }
+  .ms-u-md6 {
+    width: 50%;
+  }
+  .ms-u-md5 {
+    width: 41.66666666666667%;
+  }
+  .ms-u-md4 {
+    width: 33.33333333333333%;
+  }
+  .ms-u-md3 {
+    width: 25%;
+  }
+  .ms-u-md2 {
+    width: 16.666666666666664%;
+  }
+  .ms-u-md1 {
+    width: 8.333333333333332%;
+  }
+  .ms-u-mdPull12 {
+    right: 100%;
+  }
+  .ms-u-mdPull11 {
+    right: 91.66666666666666%;
+  }
+  .ms-u-mdPull10 {
+    right: 83.33333333333334%;
+  }
+  .ms-u-mdPull9 {
+    right: 75%;
+  }
+  .ms-u-mdPull8 {
+    right: 66.66666666666666%;
+  }
+  .ms-u-mdPull7 {
+    right: 58.333333333333336%;
+  }
+  .ms-u-mdPull6 {
+    right: 50%;
+  }
+  .ms-u-mdPull5 {
+    right: 41.66666666666667%;
+  }
+  .ms-u-mdPull4 {
+    right: 33.33333333333333%;
+  }
+  .ms-u-mdPull3 {
+    right: 25%;
+  }
+  .ms-u-mdPull2 {
+    right: 16.666666666666664%;
+  }
+  .ms-u-mdPull1 {
+    right: 8.333333333333332%;
+  }
+  .ms-u-mdPull0 {
+    right: 0%;
+  }
+  .ms-u-mdPush12 {
+    left: 100%;
+  }
+  .ms-u-mdPush11 {
+    left: 91.66666666666666%;
+  }
+  .ms-u-mdPush10 {
+    left: 83.33333333333334%;
+  }
+  .ms-u-mdPush9 {
+    left: 75%;
+  }
+  .ms-u-mdPush8 {
+    left: 66.66666666666666%;
+  }
+  .ms-u-mdPush7 {
+    left: 58.333333333333336%;
+  }
+  .ms-u-mdPush6 {
+    left: 50%;
+  }
+  .ms-u-mdPush5 {
+    left: 41.66666666666667%;
+  }
+  .ms-u-mdPush4 {
+    left: 33.33333333333333%;
+  }
+  .ms-u-mdPush3 {
+    left: 25%;
+  }
+  .ms-u-mdPush2 {
+    left: 16.666666666666664%;
+  }
+  .ms-u-mdPush1 {
+    left: 8.333333333333332%;
+  }
+  .ms-u-mdPush0 {
+    left: 0%;
+  }
+}
+
+// Large screens
+@media (min-width: @screen-lg-min) {
+  .ms-u-lg12 {
+    width: 100%;
+  }
+  .ms-u-lg11 {
+    width: 91.66666666666666%;
+  }
+  .ms-u-lg10 {
+    width: 83.33333333333334%;
+  }
+  .ms-u-lg9 {
+    width: 75%;
+  }
+  .ms-u-lg8 {
+    width: 66.66666666666666%;
+  }
+  .ms-u-lg7 {
+    width: 58.333333333333336%;
+  }
+  .ms-u-lg6 {
+    width: 50%;
+  }
+  .ms-u-lg5 {
+    width: 41.66666666666667%;
+  }
+  .ms-u-lg4 {
+    width: 33.33333333333333%;
+  }
+  .ms-u-lg3 {
+    width: 25%;
+  }
+  .ms-u-lg2 {
+    width: 16.666666666666664%;
+  }
+  .ms-u-lg1 {
+    width: 8.333333333333332%;
+  }
+  .ms-u-lgPull12 {
+    right: 100%;
+  }
+  .ms-u-lgPull11 {
+    right: 91.66666666666666%;
+  }
+  .ms-u-lgPull10 {
+    right: 83.33333333333334%;
+  }
+  .ms-u-lgPull9 {
+    right: 75%;
+  }
+  .ms-u-lgPull8 {
+    right: 66.66666666666666%;
+  }
+  .ms-u-lgPull7 {
+    right: 58.333333333333336%;
+  }
+  .ms-u-lgPull6 {
+    right: 50%;
+  }
+  .ms-u-lgPull5 {
+    right: 41.66666666666667%;
+  }
+  .ms-u-lgPull4 {
+    right: 33.33333333333333%;
+  }
+  .ms-u-lgPull3 {
+    right: 25%;
+  }
+  .ms-u-lgPull2 {
+    right: 16.666666666666664%;
+  }
+  .ms-u-lgPull1 {
+    right: 8.333333333333332%;
+  }
+  .ms-u-lgPull0 {
+    right: 0%;
+  }
+  .ms-u-lgPush12 {
+    left: 100%;
+  }
+  .ms-u-lgPush11 {
+    left: 91.66666666666666%;
+  }
+  .ms-u-lgPush10 {
+    left: 83.33333333333334%;
+  }
+  .ms-u-lgPush9 {
+    left: 75%;
+  }
+  .ms-u-lgPush8 {
+    left: 66.66666666666666%;
+  }
+  .ms-u-lgPush7 {
+    left: 58.333333333333336%;
+  }
+  .ms-u-lgPush6 {
+    left: 50%;
+  }
+  .ms-u-lgPush5 {
+    left: 41.66666666666667%;
+  }
+  .ms-u-lgPush4 {
+    left: 33.33333333333333%;
+  }
+  .ms-u-lgPush3 {
+    left: 25%;
+  }
+  .ms-u-lgPush2 {
+    left: 16.666666666666664%;
+  }
+  .ms-u-lgPush1 {
+    left: 8.333333333333332%;
+  }
+  .ms-u-lgPush0 {
+    left: 0%;
+  }
+}

@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Alan Rodriguez - Designer / UX Engineer</title>
+        <title>Alan Rodriguez - Designer/Developer/Maker</title>
         <meta
           name="description"
           content="My portfolio of work... well, at least the stuff worth showing."

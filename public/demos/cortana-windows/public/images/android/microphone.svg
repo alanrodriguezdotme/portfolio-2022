@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="18px" height="24px" viewBox="0 0 18 24" style="enable-background:new 0 0 18 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#Rectangle_1_);stroke-width:2;}
+	.st1{fill:none;stroke:url(#Path-2_1_);stroke-width:2;stroke-linecap:round;}
+</style>
+<title>Group 2</title>
+<desc>Created with Sketch.</desc>
+<linearGradient id="Rectangle_1_" gradientUnits="userSpaceOnUse" x1="2.1181" y1="19.0326" x2="0.699" y2="20.3496" gradientTransform="matrix(8 0 0 -18 -2 365)">
+	<stop  offset="0" style="stop-color:#AE2323"/>
+	<stop  offset="0.3876" style="stop-color:#53A0FD"/>
+	<stop  offset="0.7518" style="stop-color:#B4EC51"/>
+	<stop  offset="1" style="stop-color:#ECDA51"/>
+</linearGradient>
+<path id="Rectangle" class="st0" d="M9,1L9,1c2.2,0,4,1.8,4,4v10c0,2.2-1.8,4-4,4l0,0c-2.2,0-4-1.8-4-4V5C5,2.8,6.8,1,9,1z"/>
+<linearGradient id="Path-2_1_" gradientUnits="userSpaceOnUse" x1="1.4293" y1="20.668" x2="1.4293" y2="19.668" gradientTransform="matrix(14.1462 0 0 -5.9883 -11.2439 139.9517)">
+	<stop  offset="0" style="stop-color:#FAD961"/>
+	<stop  offset="1" style="stop-color:#F76B1C"/>
+</linearGradient>
+<path id="Path-2" class="st1" d="M1.9,16.2c0,2.9,2.9,6,7.1,6s7-3,7-6"/>
+</svg>

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('./SegoeUI-Light.eot?#iefix') format('embedded-opentype'), 
+    url('./SegoeUI-Light.woff') format('woff'), 
+    url('./SegoeUI-Light.ttf') format('truetype'), 
+    url('.SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('./SegoeUI-Regular.eot?#iefix') format('embedded-opentype'), 
+    url('./SegoeUI-Regular.woff') format('woff'), 
+    url('./SegoeUI-Regular.ttf') format('truetype'), 
+    url('.SegoeUI-Regular.svg#SegoeUI-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('./SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'), 
+    url('./SegoeUI-Semibold.woff') format('woff'), 
+    url('./SegoeUI-Semibold.ttf') format('truetype'), 
+    url('./SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semilight';
+    src: url('./SegoeUI-Semilight.eot?#iefix') format('embedded-opentype'), 
+    url('./SegoeUI-Semilight.woff') format('woff'), 
+    url('./SegoeUI-Semilight.ttf') format('truetype'), 
+    url('.SegoeUI-Semilight.svg#Semilight-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Slab';
+    src: url('./segslab.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Segoe UI Slab Semibold';
+    src: url('./segslabsb.ttf')  format('truetype');
+}
+
+/* @font-face {
+  font-family: 'Segoe UI';
+  src: url('./segoeui.ttf')  format('truetype');
+} */

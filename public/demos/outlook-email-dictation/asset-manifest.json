@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/projects/outlook-email-dictation/static/css/main.7623afe4.chunk.css",
+    "main.js": "/projects/outlook-email-dictation/static/js/main.951b0680.chunk.js",
+    "main.js.map": "/projects/outlook-email-dictation/static/js/main.951b0680.chunk.js.map",
+    "runtime-main.js": "/projects/outlook-email-dictation/static/js/runtime-main.6d40ded7.js",
+    "runtime-main.js.map": "/projects/outlook-email-dictation/static/js/runtime-main.6d40ded7.js.map",
+    "static/js/2.2f8a8492.chunk.js": "/projects/outlook-email-dictation/static/js/2.2f8a8492.chunk.js",
+    "static/js/2.2f8a8492.chunk.js.map": "/projects/outlook-email-dictation/static/js/2.2f8a8492.chunk.js.map",
+    "index.html": "/projects/outlook-email-dictation/index.html",
+    "precache-manifest.2228cfe4f98fbe52ca2cdef2bed77a66.js": "/projects/outlook-email-dictation/precache-manifest.2228cfe4f98fbe52ca2cdef2bed77a66.js",
+    "service-worker.js": "/projects/outlook-email-dictation/service-worker.js",
+    "static/css/main.7623afe4.chunk.css.map": "/projects/outlook-email-dictation/static/css/main.7623afe4.chunk.css.map",
+    "static/js/2.2f8a8492.chunk.js.LICENSE.txt": "/projects/outlook-email-dictation/static/js/2.2f8a8492.chunk.js.LICENSE.txt",
+    "static/media/full-mdl2.css": "/projects/outlook-email-dictation/static/media/FullMDL2.94859612.woff",
+    "static/media/calendar-outline.svg": "/projects/outlook-email-dictation/static/media/calendar-outline.0c64e80b.svg",
+    "static/media/earcon-listening.wav": "/projects/outlook-email-dictation/static/media/earcon-listening.6a45a621.wav",
+    "static/media/earcon-stoplistening.wav": "/projects/outlook-email-dictation/static/media/earcon-stoplistening.a087f9c3.wav",
+    "static/media/header.png": "/projects/outlook-email-dictation/static/media/header.221b9f26.png",
+    "static/media/inbox-list.png": "/projects/outlook-email-dictation/static/media/inbox-list.911d6670.png",
+    "static/media/mail-outline.svg": "/projects/outlook-email-dictation/static/media/mail-outline.27cf0041.svg",
+    "static/media/mail-solid.svg": "/projects/outlook-email-dictation/static/media/mail-solid.cd915c40.svg",
+    "static/media/search-list.png": "/projects/outlook-email-dictation/static/media/search-list.bb514786.png",
+    "static/media/search-outline.svg": "/projects/outlook-email-dictation/static/media/search-outline.3b7f6360.svg",
+    "static/media/search-solid.svg": "/projects/outlook-email-dictation/static/media/search-solid.6a54db97.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d40ded7.js",
+    "static/js/2.2f8a8492.chunk.js",
+    "static/css/main.7623afe4.chunk.css",
+    "static/js/main.951b0680.chunk.js"
+  ]
+}
