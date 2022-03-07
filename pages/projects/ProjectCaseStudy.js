@@ -5,7 +5,7 @@ import styles from "../../styles/css/ProjectCaseStudy.module.css";
 export default function ProjectCaseStudy({ sections }) {
   return (
     <div className={styles.section}>
-      {sections.map((section, s) => (
+      {sections?.map((section, s) => (
         <div className={styles.sectionWrapper} key={`section-${s}`}>
           <div className={styles.info}>
             <div className={styles.title}>
@@ -13,7 +13,7 @@ export default function ProjectCaseStudy({ sections }) {
             </div>
             {section.text && (
               <div className={styles.text}>
-                {section.text.map((txt, t) => (
+                {section?.text.map((txt, t) => (
                   <span
                     dangerouslySetInnerHTML={{ __html: txt }}
                     key={`txt-${s}-${t}`}
@@ -24,7 +24,7 @@ export default function ProjectCaseStudy({ sections }) {
           </div>
           {section.images && (
             <div className={styles.images}>
-              {section.images.map((img, i) => (
+              {section?.images.map((img, i) => (
                 <div className={styles.image} key={`img-${s}-${i}`}>
                   <Image
                     src={require(`../../public/projects/${img}`)}
