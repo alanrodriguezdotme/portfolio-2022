@@ -27,8 +27,9 @@ export const getStaticProps = async (context) => {
 
 export default function ProjectPage({ project }) {
   const [showAbout, setShowAbout] = useState(false);
-  const [showGallery, setShowGallery] = useState(false);
-  const [galleryIndex, setGalleryIndex] = useState(0);
+  // const [showGallery, setShowGallery] = useState(false);
+  // const [galleryIndex, setGalleryIndex] = useState(0);
+
   return (
     <div>
       <Header showAbout={showAbout} setShowAbout={setShowAbout} interiorPage />

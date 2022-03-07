@@ -12,6 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 719px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .brandingWrapper {
@@ -19,7 +24,13 @@
   align-items: center;
 }
 
-.branding {
+.interiorPageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.brandingHome,
+.brandingInteriorPage {
   flex-grow: 1;
   display: flex;
   align-items: baseline;
@@ -36,9 +47,16 @@
   .subtitle {
     color: $primary;
   }
+}
 
-  &:hover {
-    text-shadow: 0 0 10px $secondary;
+.brandingHome:hover {
+  text-shadow: 0 0 10px $secondary;
+}
+
+.brandingInteriorPage:hover {
+  .subtitle,
+  .title {
+    color: $secondary;
   }
 }
 

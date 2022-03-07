@@ -3,15 +3,21 @@
 
 .headerWrapper { width: 1200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
+@media (max-width: 719px) { .headerWrapper { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 20px; } }
+
 .brandingWrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.branding { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; gap: 0.5em; font-size: 1.25em; cursor: pointer; -webkit-transition: 500ms ease-in-out; transition: 500ms ease-in-out; }
+.interiorPageWrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.branding .title { font-weight: 600; color: #fffffe; font-family: "IBM Plex Serif", serif; }
+.brandingHome, .brandingInteriorPage { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; gap: 0.5em; font-size: 1.25em; cursor: pointer; -webkit-transition: 500ms ease-in-out; transition: 500ms ease-in-out; }
 
-.branding .subtitle { color: #b8c1ec; }
+.brandingHome .title, .brandingInteriorPage .title { font-weight: 600; color: #fffffe; font-family: "IBM Plex Serif", serif; }
 
-.branding:hover { text-shadow: 0 0 10px #bbeedf; }
+.brandingHome .subtitle, .brandingInteriorPage .subtitle { color: #b8c1ec; }
+
+.brandingHome:hover { text-shadow: 0 0 10px #bbeedf; }
+
+.brandingInteriorPage:hover .subtitle, .brandingInteriorPage:hover .title { color: #bbeedf; }
 
 .links { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; gap: 12px; }
 

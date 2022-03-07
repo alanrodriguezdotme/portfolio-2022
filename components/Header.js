@@ -14,28 +14,37 @@ export default function Header({ interiorPage, setShowAbout, showAbout }) {
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
         <div className={styles.brandingWrapper}>
-          {interiorPage && (
+          {interiorPage ? (
             <Tooltip text="Go back">
               <Link passHref href="/">
-                <div className={styles.link}>
-                  <a>
-                    <BackIcon />
-                  </a>
+                <div className={styles.interiorPageWrapper}>
+                  <div className={styles.link}>
+                    <a>
+                      <BackIcon />
+                    </a>
+                  </div>
+                  <div className={styles.brandingInteriorPage}>
+                    <span className={styles.title}>Alan Rodriguez</span>
+                    <span className={styles.subtitle}>
+                      Designer / Developer / Maker
+                    </span>
+                  </div>
                 </div>
               </Link>
             </Tooltip>
+          ) : (
+            <Tooltip text="Hi there! 👋🏽" yOffset={12}>
+              <div
+                className={styles.brandingHome}
+                onClick={setShowAbout && (() => setShowAbout(!showAbout))}
+              >
+                <span className={styles.title}>Alan Rodriguez</span>
+                <span className={styles.subtitle}>
+                  Designer / Developer / Maker
+                </span>
+              </div>
+            </Tooltip>
           )}
-          <Tooltip text="Hi there! 👋🏽" yOffset={12}>
-            <div
-              className={styles.branding}
-              onClick={setShowAbout && (() => setShowAbout(!showAbout))}
-            >
-              <span className={styles.title}>Alan Rodriguez</span>
-              <span className={styles.subtitle}>
-                Designer / Developer / Maker
-              </span>
-            </div>
-          </Tooltip>
         </div>
         <div className={styles.links}>
           <Tooltip text="info@alanrodriguez.me">

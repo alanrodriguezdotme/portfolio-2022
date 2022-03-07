@@ -1,27 +1,32 @@
 import React from "react";
 import styles from "../styles/css/ProjectCard.module.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <div
-        className={styles.projectCard}
-        style={{ backgroundImage: `url('projects/${project.thumbnail}')` }}
-      >
-        <motion.div
-          whileHover={{ opacity: 1, transition: { duration: 0.25 } }}
-          className={styles.projectCardInfo}
-        >
-          <div className={styles.company}>
-            <label>{project.company}</label>
+    <Link passHref href={`/projects/${project.id}`}>
+      <a className={styles.projectCardAnchor}>
+        <motion.div whileHover={{ scale: 1.05 }}>
+          <div
+            className={styles.projectCard}
+            style={{ backgroundImage: `url('projects/${project.thumbnail}')` }}
+          >
+            <motion.div
+              whileHover={{ opacity: 1, transition: { duration: 0.25 } }}
+              className={styles.projectCardInfo}
+            >
+              <div className={styles.company}>
+                <label>{project.company}</label>
+              </div>
+              <div className={styles.title}>
+                <h2>{project.title}</h2>
+              </div>
+              <div className={styles.subtitle}>{project.subtitle}</div>
+            </motion.div>
           </div>
-          <div className={styles.title}>
-            <h2>{project.title}</h2>
-          </div>
-          <div className={styles.subtitle}>{project.subtitle}</div>
         </motion.div>
-      </div>
-    </motion.div>
+      </a>
+    </Link>
   );
 }

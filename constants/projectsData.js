@@ -122,6 +122,26 @@ export const projectsData = [
     ],
   },
   {
+    id: "cohesive-classrooms",
+    title: "Cohesive Classrooms",
+    type: ["Work"],
+    thumbnail: "cohesive-classrooms/final-logo-colors.png",
+    mainImage: "cohesive-classrooms/final-logo-colors.png",
+    images: [
+      "cohesive-classrooms/website-1.png",
+      "cohesive-classrooms/website-2.png",
+      "cohesive-classrooms/logo-ideas.png",
+      "cohesive-classrooms/color-exploration.png",
+    ],
+    roles: ["Branding, Design, Development, Video Editing"],
+    company: "Cohesive Classrooms",
+    subtitle:
+      "Cultivating classrooms where every child is seen, valued, and accepted",
+    description:
+      "My wife and her friend/colleague started Cohesive Classrooms--a series of video modules centered around classroom management for K-12 teachers. I worked with them to iterate on their branding and website design. Once approved, I taught myself NextJS to build site and make it SEO-friendly for their budding business.",
+    link: "https://cohesiveclassrooms.com",
+  },
+  {
     id: "email-dictation",
     title: "Outlook Email Dictation",
     type: ["Work"],

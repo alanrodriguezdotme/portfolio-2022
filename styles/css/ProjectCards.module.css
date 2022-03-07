@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300;600&family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
 .projectCards { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0 30px; }
 
-.projectCardsWrapper { width: 1200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 24px; }
+.projectCardsWrapper { max-width: 1200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 24px; }
+
+@media (max-width: 1199px) and (min-width: 954px) { .projectCardsWrapper { width: 894px; } }
+
+@media (max-width: 953px) and (min-width: 649px) { .projectCardsWrapper { width: 588px; } }
+
+@media (max-width: 648px) { .projectCardsWrapper { width: 100%; } }
