@@ -13,17 +13,18 @@ export default function Home() {
       </Layout>
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-118957712-3"
         strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-Z7YSVRTSH7`}
       />
-      <Script id="google-analtyics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-118957712-3');`}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z7YSVRTSH7', {
+              page_path: window.location.pathname,
+            });
+          `}
       </Script>
     </div>
   );
