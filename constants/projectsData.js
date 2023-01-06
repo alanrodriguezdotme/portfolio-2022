@@ -1,16 +1,22 @@
 export const projectsData = [
   {
-    id: "synapse-drums",
-    title: "Synapse Drums",
+    id: "emergent-drums",
+    title: "Emergent Drums",
     type: ["Work"],
-    thumbnail: "synapse-drums/generator.png",
-    mainImage: "synapse-drums/generator.png",
-    images: ["synapse-drums/landing-page.png"],
-    roles: ["Product Design", "Front-end Development", "Marketing"],
+    thumbnail: "emergent-drums/emergent-drums-plugin-full.png",
+    mainImage: "emergent-drums/emergent-drums-plugin-full.png",
+    images: [
+      "emergent-drums/emergent-drums-plugin-compact.png",
+      "emergent-drums/emergent-drums-features.png",
+      "emergent-drums/emergent-drums-landing-page.png",
+      "emergent-drums/emergent-drums-purchase.png",
+      "emergent-drums/emergent-drums-team.png",
+    ],
+    roles: ["Branding", "Product Design", "Front-end Development", "Marketing"],
     company: "AudiaLab",
     subtitle: "Generate countless drum samples using AI",
     description:
-      "Started by a good friend of mine, Synapse Drums is a music plugin that can generate endless drum samples, all royalty-free. I designed and helped build the website and app, as well as manage the brand, basic marketing stuff, and anything else that needs doing. We're still in the alpha stage of the product, and our current focus is experimenting with features and getting user feedback.",
+      "Started by a good friend of mine, Berkeley Malagon, Emergents Drums is a music production plugin that can generate endless drum samples, all royalty-free. I joined him early in the project, and together with a small, rag-tag team, we developed the idea from an early alpha only available in the browser, all the way to launching a fully-loaded VST3 plugin. I designed nearly everything from the brand, website, and plugin. I worked closely with JUCE developers and our growing Discord community to refine and shape the plugin experience. Berkeley and I also built and maintain the website using NextJS and a custom backend and inference server.",
     link: "https://audialab.com",
   },
   {
@@ -146,7 +152,8 @@ export const projectsData = [
     title: "Outlook Email Dictation",
     type: ["Work"],
     thumbnail: "email-dictation/email-dictation-bold.png",
-    mainImage: "email-dictation/outlook-email-dictation.gif",
+    mainImage:
+      "https://player.vimeo.com/video/786780398?h=b929e1b434&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     images: [
       "email-dictation/email-dictation-new-message.png",
       "email-dictation/email-dictation-bold.png",
@@ -169,7 +176,8 @@ export const projectsData = [
     description:
       "At this point in Cortana's history, we began to explore what voice experiences could look like within an indvidual app. We worked with Teams as a starting point, with a focus on messaging. This prototype shows how it would look and sound to have a multi-turn skill within the Teams mobile app.",
     thumbnail: "teams-voice-skills/cortana-in-teams-distracted-disambig.png",
-    mainImage: "teams-voice-skills/teams-voice-skills-1.gif",
+    mainImage:
+      "https://player.vimeo.com/video/786794556?h=89a228e8e2&badge=0&autopause=0&player_id=0&app_id=58479/embed",
     images: [
       "teams-voice-skills/cortana-in-teams-full-attention-panel.png",
       "teams-voice-skills/cortana-in-teams-full-attention-disambig.png",
@@ -206,7 +214,8 @@ export const projectsData = [
     title: "Meeting Bookmarks",
     type: ["Work"],
     thumbnail: "meeting-bookmarks/meeting-bookmark-utterance.png",
-    mainImage: "meeting-bookmarks/meeting-bookmark-utterance.png",
+    mainImage:
+      "https://player.vimeo.com/video/786780241?h=f6656aa023&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     images: [
       "meeting-bookmarks/meeting-bookmark-empty.png",
       "meeting-bookmarks/meeting-bookmark-bookmark.png",

@@ -9,6 +9,7 @@ import About from "../../components/About";
 import Tooltip from "../../components/Tooltip";
 import Image from "next/image";
 import ProjectCaseStudy from "./ProjectCaseStudy";
+import Script from "next/script";
 
 export const getStaticPaths = async () => {
   const paths = projectsData.map((project) => ({
@@ -30,6 +31,33 @@ export default function ProjectPage({ project }) {
   const [showAbout, setShowAbout] = useState(false);
   // const [showGallery, setShowGallery] = useState(false);
   // const [galleryIndex, setGalleryIndex] = useState(0);
+
+  function renderMainImage(mainImage) {
+    if (mainImage.startsWith("http")) {
+      return (
+        <div>
+          <iframe
+            src={mainImage}
+            width="378"
+            height="816"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <Script src="https://player.vimeo.com/api/player.js" />
+        </div>
+      );
+    } else if (mainImage.endsWith("mp4")) {
+      return <video src={mainImage} controls />;
+    } else {
+      return (
+        <Image
+          src={require(`../../public/projects/${mainImage}`)}
+          alt={mainImage}
+        />
+      );
+    }
+  }
 
   return (
     <div>
@@ -78,10 +106,7 @@ export default function ProjectPage({ project }) {
           <div className={styles.row}>
             <div className={styles.description}>{project.description}</div>
             <div className={styles.mainImage}>
-              <Image
-                src={require(`../../public/projects/${project.mainImage}`)}
-                alt={project.mainImage}
-              />
+              {renderMainImage(project.mainImage)}
             </div>
           </div>
 

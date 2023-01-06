@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withVideos = require("next-videos");
+
+const nextConfig = withVideos({
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
@@ -9,6 +11,6 @@ const nextConfig = {
 
     return config;
   },
-};
+});
 
 module.exports = nextConfig;
