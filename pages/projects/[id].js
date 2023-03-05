@@ -50,9 +50,10 @@ export default function ProjectPage({ project }) {
     } else if (mainImage.endsWith("mp4")) {
       return <video src={mainImage} controls />;
     } else {
+      console.log(`/${project.id}/${mainImage}`);
       return (
         <Image
-          src={require(`../../public/projects/${mainImage}`)}
+          src={require(`../../public/projects/${project.id}/${mainImage}`)}
           alt={mainImage}
         />
       );
@@ -115,7 +116,7 @@ export default function ProjectPage({ project }) {
               {project.images.map((image, i) => (
                 <div className={styles.thumbnail} key={`thumbnail-${i}`}>
                   <Image
-                    src={require(`../../public/projects/${image}`)}
+                    src={require(`../../public/projects/${project.id}/${image}`)}
                     alt={image}
                     layout="responsive"
                     objectFit="scale-down"
@@ -124,7 +125,9 @@ export default function ProjectPage({ project }) {
               ))}
             </div>
           )}
-          {project.sections && <ProjectCaseStudy sections={project.sections} />}
+          {project.sections && (
+            <ProjectCaseStudy sections={project.sections} id={project.id} />
+          )}
         </div>
       </div>
       <Footer />

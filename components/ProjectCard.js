@@ -10,7 +10,9 @@ export default function ProjectCard({ project }) {
         <motion.div whileHover={{ scale: 1.05 }}>
           <div
             className={styles.projectCard}
-            style={{ backgroundImage: `url('projects/${project.thumbnail}')` }}
+            style={{
+              backgroundImage: `url('projects/${project.id}/${project.thumbnail}')`,
+            }}
           >
             <motion.div
               whileHover={{ opacity: 1, transition: { duration: 0.25 } }}

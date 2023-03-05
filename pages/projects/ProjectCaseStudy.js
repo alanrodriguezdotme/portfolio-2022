@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "../../styles/css/ProjectCaseStudy.module.css";
 
-export default function ProjectCaseStudy({ sections }) {
+export default function ProjectCaseStudy({ id, sections }) {
   return (
     <div className={styles.section}>
       {sections?.map((section, s) => (
@@ -27,7 +27,7 @@ export default function ProjectCaseStudy({ sections }) {
               {section?.images.map((img, i) => (
                 <div className={styles.image} key={`img-${s}-${i}`}>
                   <Image
-                    src={require(`../../public/projects/${img}`)}
+                    src={require(`../../public/projects/${id}/${img}`)}
                     alt={img}
                   />
                 </div>
