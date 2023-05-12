@@ -8,7 +8,7 @@ export const projectsData = [
     type: ["Work"],
     link: "https://deepsampler.audialab.com/",
     description:
-      "Deep Sampler is a new project by Audialab that can generate unique drum samples from the ones in your own library. You can adjust how close to the original sound you want it to be, and save your favorite samples, along with their sources. This project is currently in alpha, and we are actively getting feedback and rapidly improving the experience. Stay tuned!",
+      "Deep Sampler is a new project by Audialab that can generate unique drum samples from the ones in your own library. You can adjust how close to the original sound you want it to be, and save your favorite samples, along with their sources. I designed and developed the alpha using React and WaveSurferJS.",
     thumbnail: "screenshot-square.png",
     mainVideo: {
       url: "https://www.youtube.com/embed/iji1i2Alw0s",
