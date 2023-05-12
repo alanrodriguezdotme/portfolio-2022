@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/css/Header.module.css";
+import styles from "../styles/scss/Header.module.scss";
 import LinkedInIcon from "../public/icons/linkedin.svg";
 import CameraIcon from "../public/icons/camera-f.svg";
 import DocumentIcon from "../public/icons/document-f.svg";

@@ -32,6 +32,22 @@ export default function ProjectPage({ project }) {
   // const [showGallery, setShowGallery] = useState(false);
   // const [galleryIndex, setGalleryIndex] = useState(0);
 
+  function renderMainVideo({ url, width, height }) {
+    return (
+      <div>
+        <iframe
+          src={url}
+          width={width}
+          height={height}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <Script src="https://player.vimeo.com/api/player.js" />
+      </div>
+    );
+  }
+
   function renderMainImage(mainImage) {
     if (mainImage.startsWith("http")) {
       return (
@@ -107,11 +123,13 @@ export default function ProjectPage({ project }) {
           <div className={styles.row}>
             <div className={styles.description}>{project.description}</div>
             <div className={styles.mainImage}>
-              {renderMainImage(project.mainImage)}
+              {project.mainVideo
+                ? renderMainVideo(project.mainVideo)
+                : renderMainImage(project.mainImage)}
             </div>
           </div>
 
-          {project.images && (
+          {project.images && project.images.length > 0 && (
             <div className={styles.images}>
               {project.images.map((image, i) => (
                 <div className={styles.thumbnail} key={`thumbnail-${i}`}>

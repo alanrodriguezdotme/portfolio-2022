@@ -1,11 +1,35 @@
 export const projectsData = [
   {
+    id: "deep-sampler",
+    title: "Deep Sampler",
+    subtitle: "Generate unique drum samples based on your own library",
+    roles: ["Designer", "Developer"],
+    company: "Audialab",
+    type: ["Work"],
+    link: "https://deepsampler.audialab.com/",
+    description:
+      "Deep Sampler is a new project by Audialab that can generate unique drum samples from the ones in your own library. You can adjust how close to the original sound you want it to be, and save your favorite samples, along with their sources. This project is currently in alpha, and we are actively getting feedback and rapidly improving the experience. Stay tuned!",
+    thumbnail: "screenshot-square.png",
+    mainVideo: {
+      url: "https://www.youtube.com/embed/iji1i2Alw0s",
+      width: 585,
+      height: 400,
+    },
+    images: ["screenshot.png"],
+  },
+  {
     id: "emergent-drums",
     title: "Emergent Drums",
     type: ["Work"],
     thumbnail: "emergent-drums-plugin-full.png",
-    mainImage: "emergent-drums-plugin-full.png",
+    mainVideo: {
+      url: "https://www.youtube.com/embed/jcc7BqugUO8",
+      width: 585,
+      height: 400,
+    },
+    // mainImage: "emergent-drums-plugin-full.png",
     images: [
+      "emergent-drums-plugin-full.png",
       "emergent-drums-plugin-compact.png",
       "emergent-drums-features.png",
       "emergent-drums-landing-page.png",

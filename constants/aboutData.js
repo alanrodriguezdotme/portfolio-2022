@@ -19,12 +19,12 @@ export const aboutData = {
     },
     {
       label: "Current role",
-      text: "UX Engineer, Microsoft Office",
+      text: "Most recently Senior Design Technologist @ Shopify, and spent most of my career at Microsoft.",
     },
     {
       label: "Interests",
-      text: "Music, dancing, martial arts, football (Go Hawks/Raiders!), photography, tinkering, thrift stores, and I'm always down for a good brainstorm!",
+      text: "Music, dancing, baking, martial arts, football (Go Hawks/Raiders!), photography, tinkering, thrift stores, starting new hobbies",
     },
   ],
-  bio: "I went to school for Graphic Design. Started my career as a Visual Designer. Eventually began doing more UX and Interaction Design. Then I started buliding my own prototypes and found myself in a UX Engineer role. My current role on Microsoft Office fuses all of those roles into one, with a focus on building robust prototypes for exploration and user tesing, and as a tool for partnering across the company and beyond.",
+  bio: "I'm curious to a fault, or at least I used to think so. Now I see it as one of my biggest strengths. It's what took me from studying graphic design and illustration to building robust React applications, modelling and prototyping 3D hardware, and building AI-powered music production software. Curiosity gives me range and the versatility to make an impact in all parts of the design process.",
 };
