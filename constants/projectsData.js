@@ -44,6 +44,24 @@ export const projectsData = [
     link: "https://audialab.com",
   },
   {
+    id: "meta-os",
+    title: "Meta OS",
+    subtitle:
+      "Robust prototype showing alignment across Office, Outlook, and Teams",
+    roles: ["UX Engineer"],
+    company: "Microsot",
+    type: ["Work"],
+    description:
+      "On MetaOS, our goal was to align UX components and experiences across Office, Outlook, and Teams. My role as the UX Engineer was to build a robust prototype to both iterate with, and act as a north",
+    thumbnail: "meta-os-teams.png",
+    mainVideo: {
+      url: "https://www.youtube.com/embed/0j86-xJmzD8",
+      width: 585,
+      height: 400,
+    },
+    images: ["https://www.youtube.com/embed/KXirDwhQNlg"],
+  },
+  {
     id: "cortana-office-assistant",
     title: "Cortana Office Assistant",
     type: ["Work"],

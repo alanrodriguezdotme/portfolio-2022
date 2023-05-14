@@ -32,7 +32,7 @@ export default function ProjectPage({ project }) {
   // const [showGallery, setShowGallery] = useState(false);
   // const [galleryIndex, setGalleryIndex] = useState(0);
 
-  function renderMainVideo({ url, width, height }) {
+  function renderVideo({ url, width, height }) {
     return (
       <div>
         <iframe
@@ -49,24 +49,9 @@ export default function ProjectPage({ project }) {
   }
 
   function renderMainImage(mainImage) {
-    if (mainImage.startsWith("http")) {
-      return (
-        <div>
-          <iframe
-            src={mainImage}
-            width="378"
-            height="816"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <Script src="https://player.vimeo.com/api/player.js" />
-        </div>
-      );
-    } else if (mainImage.endsWith("mp4")) {
+    if (mainImage.endsWith("mp4")) {
       return <video src={mainImage} controls />;
     } else {
-      console.log(`/${project.id}/${mainImage}`);
       return (
         <Image
           src={require(`../../public/projects/${project.id}/${mainImage}`)}
@@ -74,6 +59,17 @@ export default function ProjectPage({ project }) {
         />
       );
     }
+  }
+
+  function renderImage(projectId, image) {
+    return (
+      <Image
+        src={require(`../../public/projects/${projectId}/${image}`)}
+        alt={image}
+        layout="responsive"
+        objectFit="scale-down"
+      />
+    );
   }
 
   return (
@@ -123,9 +119,8 @@ export default function ProjectPage({ project }) {
           <div className={styles.row}>
             <div className={styles.description}>{project.description}</div>
             <div className={styles.mainImage}>
-              {project.mainVideo
-                ? renderMainVideo(project.mainVideo)
-                : renderMainImage(project.mainImage)}
+              {project.mainVideo && renderVideo(project.mainVideo)}
+              {project.mainImage && renderMainImage(project.mainImage)}
             </div>
           </div>
 
@@ -133,12 +128,9 @@ export default function ProjectPage({ project }) {
             <div className={styles.images}>
               {project.images.map((image, i) => (
                 <div className={styles.thumbnail} key={`thumbnail-${i}`}>
-                  <Image
-                    src={require(`../../public/projects/${project.id}/${image}`)}
-                    alt={image}
-                    layout="responsive"
-                    objectFit="scale-down"
-                  />
+                  {image.startsWith("https://")
+                    ? renderVideo({ url: image, width: 400, height: 300 })
+                    : renderImage(project.id, image)}
                 </div>
               ))}
             </div>
