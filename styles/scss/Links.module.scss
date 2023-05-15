@@ -1,0 +1,27 @@
+@import "base";
+
+.links {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.link {
+  padding: 8px;
+
+  a svg {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+  }
+
+  &:hover {
+    a svg {
+      fill: $secondary;
+
+      transform: scale(1.2);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    }
+  }
+}

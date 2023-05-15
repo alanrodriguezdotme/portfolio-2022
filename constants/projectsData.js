@@ -194,8 +194,11 @@ export const projectsData = [
     title: "Outlook Email Dictation",
     type: ["Work"],
     thumbnail: "email-dictation-bold.png",
-    mainImage:
-      "https://player.vimeo.com/video/786780398?h=b929e1b434&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    mainVideo: {
+      url: "https://player.vimeo.com/video/786780398?h=b929e1b434&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      width: 500,
+      height: 723,
+    },
     images: [
       "email-dictation-new-message.png",
       "email-dictation-bold.png",
@@ -218,8 +221,11 @@ export const projectsData = [
     description:
       "At this point in Cortana's history, we began to explore what voice experiences could look like within an indvidual app. We worked with Teams as a starting point, with a focus on messaging. This prototype shows how it would look and sound to have a multi-turn skill within the Teams mobile app.",
     thumbnail: "cortana-in-teams-distracted-disambig.png",
-    mainImage:
-      "https://player.vimeo.com/video/786794556?h=89a228e8e2&badge=0&autopause=0&player_id=0&app_id=58479/embed",
+    mainVideo: {
+      url: "https://player.vimeo.com/video/786794556?h=89a228e8e2&badge=0&autopause=0&player_id=0&app_id=58479/embed",
+      width: 500,
+      height: 723,
+    },
     images: [
       "cortana-in-teams-full-attention-panel.png",
       "cortana-in-teams-full-attention-disambig.png",
@@ -256,13 +262,16 @@ export const projectsData = [
     title: "Meeting Bookmarks",
     type: ["Work"],
     thumbnail: "meeting-bookmark-utterance.png",
-    mainImage:
-      "https://player.vimeo.com/video/786780241?h=f6656aa023&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    images: [
-      "meeting-bookmark-empty.png",
-      "meeting-bookmark-bookmark.png",
-      "meeting-bookmark-saved.png",
-    ],
+    mainVideo: {
+      url: "https://player.vimeo.com/video/786780241?h=f6656aa023&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      width: 500,
+      height: 723,
+    },
+    // images: [
+    //   "meeting-bookmark-empty.png",
+    //   "meeting-bookmark-bookmark.png",
+    //   "meeting-bookmark-saved.png",
+    // ],
     subtitle: "Could a simple button eliminate the need for taking notes?",
     description:
       "Working with a cross-discipline incubation team in Cortana, this prototype explores the idea bookmarks in meetings. Recording and AI-enabled transcriptions of meetings is becoming more commonplace. Instead of taking notes about everything that was discussed, what if each member had a button that, when pressed, would bookmark what was just said. After the meeting, the user was emailed a list of their bookmarks, as well as an aggregation of popular bookmarks, which may include the slide being presented, an audio recoring of what was said along with the text from the transcript. Is this enough to eliminate the need for taking notes? , we also the user-generated signal from the bookmarks can help identify what is truly important to people.",

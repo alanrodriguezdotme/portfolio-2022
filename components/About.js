@@ -34,11 +34,7 @@ export default function About({ showAbout, setShowAbout }) {
           >
             <div className={styles.card}>
               <div className={styles.photo}>
-                <Image
-                  src={require("../public/photo.jpg")}
-                  alt="photo of me"
-                  objectFit="cover"
-                />
+                <Image src="/photo.jpg" alt="photo of me" />
               </div>
               <div className={styles.info}>
                 <div className={styles.details}>
