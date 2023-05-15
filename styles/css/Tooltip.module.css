@@ -1,6 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300;600&family=IBM+Plex+Serif:ital,wght@1,700&display=swap");
-.tooltipWrapper { position: relative; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-
-.tooltipWrapper:hover { z-index: 100; }
-
-.tooltip { background: #bbeedf; color: #232946; padding: 4px 8px; border-radius: 3px; position: absolute; white-space: pre; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; max-width: 200px; z-index: 100; -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px; }

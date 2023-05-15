@@ -5,6 +5,12 @@
   color: $text;
   position: relative;
   z-index: 1;
+
+  @media (max-width: $mobileWidth) {
+    height: initial;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
 .main {

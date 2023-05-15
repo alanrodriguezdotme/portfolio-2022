@@ -104,3 +104,47 @@
     padding-bottom: 30px;
   }
 }
+
+@media (max-width: $mobileWidth) {
+  .projectPageHeader {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+    border: none;
+
+    .details {
+      width: 100%;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $primary;
+      // flex-direction: column;
+      .detail {
+        width: 100%;
+      }
+    }
+  }
+
+  .projectPageContent {
+    width: 100%;
+    padding: 20px;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .description {
+      width: 100%;
+    }
+
+    .mainImage {
+      width: 100%;
+      iframe {
+        width: 100%;
+        max-height: 240px;
+      }
+    }
+
+    .images {
+      column-count: 1;
+    }
+  }
+}

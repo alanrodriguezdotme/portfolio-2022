@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import styles from "../styles/css/About.module.css";
+import styles from "../styles/scss/About.module.scss";
 import { aboutData } from "../constants/aboutData";
 import Image from "next/image";
 

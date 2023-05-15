@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../../styles/css/ProjectCaseStudy.module.css";
+import styles from "../../styles/scss/ProjectCaseStudy.module.scss";
 
 export default function ProjectCaseStudy({ id, sections }) {
   return (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import _ from "lodash";
 import Head from "next/head";
 import { projectsData } from "../../constants/projectsData";
-import styles from "../../styles/css/ProjectPage.module.css";
+import styles from "../../styles/scss/ProjectPage.module.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import About from "../../components/About";

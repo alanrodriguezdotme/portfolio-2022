@@ -5,6 +5,8 @@
   padding: 30px;
   display: flex;
   justify-content: center;
+  position: inherit;
+  z-index: 1;
 }
 
 .headerWrapper {
@@ -81,20 +83,46 @@
   }
 }
 
-@media (max-width: 719px) {
-  .headerWrapper {
-    flex-direction: column;
-    gap: 20px;
+@media (max-width: $mobileWidth) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .links {
+    display: none;
   }
 
   .brandingHome {
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    padding: 0 20px;
 
     .title {
-      font-size: 32px;
+      font-size: 24px;
     }
+  }
+
+  .brandingWrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .interiorPageWrapper {
+    align-items: flex-start;
+    gap: 8px;
+
+    .link svg {
+      width: 36px;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+  }
+  .brandingInteriorPage {
+    flex-direction: column;
+    gap: 10px;
   }
 }

@@ -34,15 +34,17 @@ export default function Header({ interiorPage, setShowAbout, showAbout }) {
             </Tooltip>
           ) : (
             <Tooltip text="Hi there! 👋🏽" yOffset={12}>
-              <div
-                className={styles.brandingHome}
-                onClick={setShowAbout && (() => setShowAbout(!showAbout))}
-              >
-                <span className={styles.title}>Alan Rodriguez</span>
-                <span className={styles.subtitle}>
-                  Designer / Developer / Maker
-                </span>
-              </div>
+              <Link passHref href="/about">
+                <div
+                  className={styles.brandingHome}
+                  // onClick={setShowAbout && (() => setShowAbout(!showAbout))}
+                >
+                  <span className={styles.title}>Alan Rodriguez</span>
+                  <span className={styles.subtitle}>
+                    Designer / Developer / Maker
+                  </span>
+                </div>
+              </Link>
             </Tooltip>
           )}
         </div>

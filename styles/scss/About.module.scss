@@ -1,77 +1,87 @@
 @import "base";
 
 .about {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+}
+
+.aboutWrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    34deg,
-    rgba(0, 0, 0, 0.716) 0%,
-    rgba(0, 0, 0, 0.968) 100%
-  );
+  min-height: calc(100vh - 241px);
+}
 
-  .clickOutside {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
+.card {
+  background: $borderColor;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  max-width: 80vw;
+  max-height: 80vh;
+  height: fit-content;
+  z-index: 4;
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+
+  h3 {
+    line-height: 1.4em;
   }
 
-  .card {
-    background: $bgColor;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    max-width: 80vw;
-    max-height: 80vh;
-    height: fit-content;
-    z-index: 4;
+  label {
+    color: $primary;
+  }
+
+  .photo {
+    width: 320px;
+    height: 100%;
     display: flex;
-    align-items: stretch;
-    gap: 30px;
-    overflow: auto;
+    align-items: center;
+  }
 
-    h3 {
-      line-height: 1.4em;
-    }
+  .info {
+    width: 500px;
+    display: flex;
+    gap: 20px;
+  }
 
-    label {
-      color: $primary;
-    }
+  .details {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+  }
+
+  .bio {
+    width: 320px;
+    width: 50%;
+  }
+}
+
+@media (max-width: $mobileWidth) {
+  .card {
+    flex-direction: column;
+    padding: 20px;
+    max-height: fit-content;
 
     .photo {
-      width: 320px;
-      height: 100%;
-      display: flex;
-      align-items: center;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
     }
 
     .info {
-      width: 500px;
-      display: flex;
-      gap: 20px;
+      flex-direction: column;
+      width: 100%;
     }
 
-    .details {
-      width: 320px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      width: 50%;
-    }
-
+    .details,
     .bio {
-      width: 320px;
-      width: 50%;
+      width: 100%;
     }
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import styles from "../styles/css/Gallery.module.css";
+import styles from "../styles/scss/Gallery.module.scss";
 import Image from "next/image";
 import ArrowLeftIcon from "../public/icons/arrow-left.svg";
 import ArrowRightIcon from "../public/icons/arrow-right.svg";

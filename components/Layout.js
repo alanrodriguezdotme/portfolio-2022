@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import Header from "../components/Header";
-import styles from "../styles/css/Layout.module.css";
+import styles from "../styles/scss/Layout.module.scss";
 import About from "./About";
 import Footer from "./Footer";
 

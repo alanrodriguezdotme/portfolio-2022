@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
-import styles from "../styles/css/Tooltip.module.css";
+import styles from "../styles/scss/Tooltip.module.scss";
 
 export default function Tooltip({ text, children, yOffset = 0, delay = 0 }) {
   const [showTooltip, setShowTooltip] = useState(false);

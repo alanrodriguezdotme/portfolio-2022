@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import ProjectCards from "../components/ProjectCards";
-import styles from "../styles/css/Home.module.css";
+import styles from "../styles/scss/Home.module.scss";
 import Script from "next/script";
 
 export default function Home() {
