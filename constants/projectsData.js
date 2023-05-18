@@ -128,7 +128,7 @@ export const projectsData = [
     roles: ["Full-Stack Development, Web Design"],
     company: "Microsoft AI",
     type: ["Work", "Case Study"],
-    link: "/demos/",
+    // link: "/demos/voice-patterns",
     description:
       "There has been a significant growth in digital voice experiences over the past decade, and with that growth comes a slew of different solutions and sometimes messy design patterns. While on the Cortana design team, we saw this as an opportunity--not only to bring some order to the abundance of ideas going around the company, but also to share the experinces and expertise of our voice designers, and make these modern voice experiences truly helpful for all users.",
     thumbnail: "voice-patterns-home.png",

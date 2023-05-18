@@ -56,7 +56,7 @@ export default function Links() {
       <Tooltip text="My Resume/CV" yOffset={-70}>
         <div className={styles.link}>
           <a
-            href="alan-rodriguez-resume-2023.pdf"
+            href="alan-rodriguez-resume-2023-v2.pdf"
             rel="noreferrer"
             target="_blank"
           >
