@@ -8,7 +8,11 @@ import Links from "./Links";
 export default function Header({ interiorPage, setShowAbout, showAbout }) {
   return (
     <header className={styles.header}>
-      <div className={styles.headerWrapper}>
+      <div
+        className={`${styles.headerWrapper} ${
+          interiorPage ? styles.interiorHeaderWrapper : ""
+        }`}
+      >
         <div className={styles.brandingWrapper}>
           {interiorPage ? (
             <Tooltip text="Go back">

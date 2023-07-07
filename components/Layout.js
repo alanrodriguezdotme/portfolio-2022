@@ -16,6 +16,7 @@ export default function Layout({ children }) {
           name="description"
           content="My portfolio of work... well, at least the stuff worth showing."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Header showAbout={showAbout} setShowAbout={setShowAbout} />
       <main className={styles.main}>{children}</main>

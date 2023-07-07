@@ -24,6 +24,13 @@
 .interiorPageWrapper {
   display: flex;
   align-items: center;
+  gap: 8px;
+
+  .link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .brandingHome,
@@ -58,6 +65,20 @@
 }
 
 @media (max-width: $mobileWidth) {
+  .header {
+    padding: 20px;
+  }
+
+  .headerWrapper {
+    max-width: 894px;
+
+    &.interiorHeaderWrapper {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: $twoColumnWidthMax) {
   .header {
     padding: 20px 0;
     width: 100%;

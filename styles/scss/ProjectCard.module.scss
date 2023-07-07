@@ -1,7 +1,7 @@
 @import "base";
 
 .projectCardAnchor {
-  @media (max-width: 648px) {
+  @media (max-width: $oneColumnWidthMax) {
     width: 100%;
     height: 300px;
   }
@@ -18,7 +18,7 @@
   cursor: pointer;
   overflow: hidden;
 
-  @media (max-width: 648px) {
+  @media (max-width: $oneColumnWidthMax) {
     width: 100%;
     height: 300px;
   }
