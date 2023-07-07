@@ -60,6 +60,13 @@
 @media (max-width: $mobileWidth) {
   .header {
     padding: 20px 0;
+    width: 100%;
+
+    .headerWrapper {
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   .links {
@@ -71,7 +78,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
 
     .title {
       font-size: 24px;
@@ -81,11 +87,12 @@
   .brandingWrapper {
     width: 100%;
     padding: 0 10px;
+    justify-content: center;
   }
 
   .interiorPageWrapper {
-    align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
+    align-items: center;
 
     .link svg {
       width: 36px;
@@ -97,6 +104,8 @@
   }
   .brandingInteriorPage {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
   }
 }
