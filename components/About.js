@@ -1,8 +1,8 @@
+import Image from "next/image";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "../styles/scss/About.module.scss";
 import { aboutData } from "../constants/aboutData";
-import Image from "next/image";
 
 export default function About({ showAbout, setShowAbout }) {
   return (
@@ -34,7 +34,11 @@ export default function About({ showAbout, setShowAbout }) {
           >
             <div className={styles.card}>
               <div className={styles.photo}>
-                <Image src="/photo.jpg" alt="photo of me" />
+                <Image
+                  src={"/photo.jpg"}
+                  style={{ objectFit: "contain" }}
+                  alt="photo of me"
+                />
               </div>
               <div className={styles.info}>
                 <div className={styles.details}>

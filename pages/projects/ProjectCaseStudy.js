@@ -28,6 +28,7 @@ export default function ProjectCaseStudy({ id, sections }) {
                 <div className={styles.image} key={`img-${s}-${i}`}>
                   <Image
                     src={require(`../../public/projects/${id}/${img}`)}
+                    layout="responsive"
                     alt={img}
                   />
                 </div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ProjectCard({ project }) {
   return (
     <Link passHref href={`/projects/${project.id}`}>
-      <a className={styles.projectCardAnchor}>
+      <div className={styles.projectCardAnchor}>
         <motion.div whileHover={{ scale: 1.05 }}>
           <div
             className={styles.projectCard}
@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
             </motion.div>
           </div>
         </motion.div>
-      </a>
+      </div>
     </Link>
   );
 }
