@@ -74,9 +74,9 @@ export default function ProjectPage({ project }) {
   }
 
   function handleImageClick(index) {
-    setGalleryIndex(index);
-    setShowGallery(true);
-    document.getElementsByTagName("body")[0].classList.add("no-scroll");
+    // setGalleryIndex(index);
+    // setShowGallery(true);
+    // document.getElementsByTagName("body")[0].classList.add("no-scroll");
   }
 
   function handleImageViewClose() {
