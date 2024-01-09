@@ -10,6 +10,7 @@ import Tooltip from "../../components/Tooltip";
 import Image from "next/image";
 import ProjectCaseStudy from "./ProjectCaseStudy";
 import Script from "next/script";
+import ImageView from "../../components/ImageView";
 
 export const getStaticPaths = async () => {
   const paths = projectsData.map((project) => ({
@@ -29,8 +30,8 @@ export const getStaticProps = async (context) => {
 
 export default function ProjectPage({ project }) {
   const [showAbout, setShowAbout] = useState(false);
-  // const [showGallery, setShowGallery] = useState(false);
-  // const [galleryIndex, setGalleryIndex] = useState(0);
+  const [showGallery, setShowGallery] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
   function renderVideo({ url, width, height }) {
     return (
@@ -72,6 +73,17 @@ export default function ProjectPage({ project }) {
     );
   }
 
+  function handleImageClick(index) {
+    setGalleryIndex(index);
+    setShowGallery(true);
+    document.getElementsByTagName("body")[0].classList.add("no-scroll");
+  }
+
+  function handleImageViewClose() {
+    setShowGallery(false);
+    document.getElementsByTagName("body")[0].classList.remove("no-scroll");
+  }
+
   return (
     <div>
       <Head>
@@ -80,6 +92,16 @@ export default function ProjectPage({ project }) {
         </title>
         <meta name="description" content={project.description} />
       </Head>
+      {showGallery && (
+        <ImageView
+          projectId={project.id}
+          images={project.images}
+          show={showGallery}
+          setShow={setShowGallery}
+          setClose={handleImageViewClose}
+          index={galleryIndex}
+        />
+      )}
       <Header showAbout={showAbout} setShowAbout={setShowAbout} interiorPage />
       <div className={styles.projectPage}>
         <div className={styles.projectPageHeader}>
@@ -127,7 +149,11 @@ export default function ProjectPage({ project }) {
           {project.images && project.images.length > 0 && (
             <div className={styles.images}>
               {project.images.map((image, i) => (
-                <div className={styles.thumbnail} key={`thumbnail-${i}`}>
+                <div
+                  className={styles.thumbnail}
+                  key={`thumbnail-${i}`}
+                  onClick={() => handleImageClick(i)}
+                >
                   {image.startsWith("https://")
                     ? renderVideo({ url: image, width: 400, height: 300 })
                     : renderImage(project.id, image)}

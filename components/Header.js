@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/scss/Header.module.scss";
-import BackIcon from "../public/icons/arrow-left.svg";
+import BackIcon from "../public/icons/arrow-left-bold.svg";
 import Tooltip from "./Tooltip";
 import Link from "next/link";
 import Links from "./Links";

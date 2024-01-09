@@ -1,10 +1,10 @@
 import styles from "../styles/scss/Links.module.scss";
 import Tooltip from "./Tooltip";
 import LinkedInIcon from "../public/icons/linkedin.svg";
-import CameraIcon from "../public/icons/camera-f.svg";
-import DocumentIcon from "../public/icons/document-f.svg";
+import CameraIcon from "../public/icons/camera-fill.svg";
+import DocumentIcon from "../public/icons/file-text-fill.svg";
 import GithubIcon from "../public/icons/github.svg";
-import EnvelopeIcon from "../public/icons/envelope-f.svg";
+import EnvelopeIcon from "../public/icons/envelope-fill.svg";
 
 export default function Links() {
   return (
