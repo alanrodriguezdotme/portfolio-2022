@@ -19,6 +19,24 @@ export const projectsData = [
     ],
   },
   {
+    id: "emergent-drums-2",
+    title: "Emergent Drums 2",
+    type: ["Work"],
+    thumbnail: "thumbnail.png",
+    mainVideo: {
+      url: "https://www.youtube.com/embed/6YS8bGco4wM",
+      width: 585,
+      height: 329,
+    },
+    images: ["full-view.png", "compact-view.png", "landing-page.png"],
+    roles: ["Branding", "Product Design", "Front-end Development", "Marketing"],
+    company: "AudiaLab",
+    subtitle: "New model with new features",
+    description:
+      "With Emergent Drums 2, we added a new AI sample generation model we call Creamy, with richer, fuller sounds. We also integrated our Deep Sampler project, allowing users to drop their own samples and generate countless variations. With the new version, I also redesigned and updated the website, with scroll effects, and new content.",
+    link: "https://audialab.com",
+  },
+  {
     id: "deep-sampler",
     title: "Deep Sampler",
     subtitle: "Generate unique drum samples based on your own library",
