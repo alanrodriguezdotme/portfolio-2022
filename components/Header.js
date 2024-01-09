@@ -19,9 +19,7 @@ export default function Header({ interiorPage, setShowAbout, showAbout }) {
               <Link passHref href="/">
                 <div className={styles.interiorPageWrapper}>
                   <div className={styles.link}>
-                    <a>
-                      <BackIcon />
-                    </a>
+                    <BackIcon />
                   </div>
                   <div className={styles.brandingInteriorPage}>
                     <span className={styles.title}>Alan Rodriguez</span>

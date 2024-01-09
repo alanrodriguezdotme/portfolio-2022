@@ -56,6 +56,7 @@ export default function ProjectPage({ project }) {
       return (
         <Image
           src={require(`../../public/projects/${project.id}/${mainImage}`)}
+          layout="responsive"
           alt={mainImage}
         />
       );
