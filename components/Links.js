@@ -9,7 +9,7 @@ import EnvelopeIcon from "../public/icons/envelope-fill.svg";
 export default function Links() {
   return (
     <div className={styles.links}>
-      <Tooltip text="info@alanrodriguez.me" yOffset={-70}>
+      <Tooltip text="info@alanrodriguez.me" yOffset={10}>
         <div className={styles.link}>
           <a
             href="mailto:info@alanrodriguez.me"
@@ -20,7 +20,7 @@ export default function Links() {
           </a>
         </div>
       </Tooltip>
-      <Tooltip text="My Github" yOffset={-70}>
+      <Tooltip text="My Github" yOffset={10}>
         <div className={styles.link}>
           <a
             href="https://github.com/alanrodriguezdotme"
@@ -31,7 +31,7 @@ export default function Links() {
           </a>
         </div>
       </Tooltip>
-      <Tooltip text="My LinkedIn" yOffset={-70}>
+      <Tooltip text="My LinkedIn" yOffset={10}>
         <div className={styles.link}>
           <a
             href="https://www.linkedin.com/in/alanrodriguez/"
@@ -42,7 +42,7 @@ export default function Links() {
           </a>
         </div>
       </Tooltip>
-      <Tooltip text="My photos" yOffset={-70}>
+      <Tooltip text="My photos" yOffset={10}>
         <div className={styles.link}>
           <a
             href="https://unsplash.com/@alan_rodriguez"
@@ -53,10 +53,10 @@ export default function Links() {
           </a>
         </div>
       </Tooltip>
-      <Tooltip text="My Resume/CV" yOffset={-70}>
+      <Tooltip text="My Resume/CV" yOffset={10}>
         <div className={styles.link}>
           <a
-            href="alan-rodriguez-resume-2023-v2.pdf"
+            href="alan-rodriguez-resume-2024.pdf"
             rel="noreferrer"
             target="_blank"
           >
