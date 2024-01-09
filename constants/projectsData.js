@@ -1,5 +1,24 @@
 export const projectsData = [
   {
+    id: "carta-ink-icons",
+    title: "Carta Iconography",
+    subtitle: "Improving icons in Ink, Carta's design system",
+    roles: ["Visual Design", "Front-End Development"],
+    company: "Carta",
+    type: ["Work"],
+    link: "https://ink.carta.com",
+    description:
+      "After only three months at Carta, I took on the task of improving the iconography in Ink, our design system. I lead the project and worked closely with Ink visual designers, as well as designers from the brand and marketing teams. It started with a thorough audit of the current icons, which at the time, were inconsistent in stroke, metaphor, and naming, and included outdated logos and duplicates. I worked with visual designers to rework every icon, iterating and refining until we had a cohesive iconography, and more importantly, proper documentation and guidelines. These guidelines are also part of our contribution model, allowing any Carta designer to contribute to Ink. After approval from the product design teams and leadership, I implemented the changes to all of the icon components in Ink, tested and tested again, and finally shipped the changes to production, all before my first six months at Carta.",
+    thumbnail: "thumbnail.png",
+    mainImage: "guidelines.png",
+    images: [
+      "analysis.png",
+      "ink-component-comparison.png",
+      "fund-admin-comparison.png",
+      "comparison.png",
+    ],
+  },
+  {
     id: "deep-sampler",
     title: "Deep Sampler",
     subtitle: "Generate unique drum samples based on your own library",
@@ -336,7 +355,7 @@ export const projectsData = [
   },
   {
     id: "ffdraftboard",
-    title: "FF Draftboard",
+    title: "Fantasy Football Draftboard",
     type: ["Fun"],
     thumbnail: "roster-dark.png",
     mainImage: "roster-dark.png",
@@ -346,7 +365,7 @@ export const projectsData = [
     subtitle: "A draftboard view for Sleeper dynasty leagues",
     description:
       "I'm a bit of a fantasy football nerd, so I spend a lot of time in the Sleeper app. Their platform is pretty amazing, I found it's trade view a bit lacking. I wanted to see all of the rosters and picks in one place, with some basic details. I discovered they have a public API, and I got to work. This was built using NextJS, Material UI, and the Sleeper API.",
-    link: "https://ffdraftboard.com",
+    link: "https://sleeper-draftboard.netlify.app/league/784453887988998144?sort=&draft=false",
   },
   {
     id: "musicbox",
