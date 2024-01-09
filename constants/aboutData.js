@@ -19,7 +19,7 @@ export const aboutData = {
     },
     {
       label: "Current role",
-      text: "Most recently Senior Design Technologist @ Shopify, and spent most of my career at Microsoft.",
+      text: "Senior Design Technologist at Carta, working on the Ink Design System",
     },
     {
       label: "Interests",
