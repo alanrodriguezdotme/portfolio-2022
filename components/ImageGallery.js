@@ -72,21 +72,25 @@ export default function ImageGallery({
         />
         <div className={styles.main + (shouldClose ? ` ${styles.close}` : "")}>
           <div className={styles.controls}>
-            <div
-              className={styles.button}
-              onClick={() => handleDirectionClick("left")}
-            >
-              <LeftArrow />
-            </div>
+            {images.length > 1 && (
+              <div
+                className={styles.button}
+                onClick={() => handleDirectionClick("left")}
+              >
+                <LeftArrow />
+              </div>
+            )}
             <div className={styles.button} onClick={() => handleClose()}>
               <Close />
             </div>
-            <div
-              className={styles.button}
-              onClick={() => handleDirectionClick("right")}
-            >
-              <RightArrow />
-            </div>
+            {images.length > 1 && (
+              <div
+                className={styles.button}
+                onClick={() => handleDirectionClick("right")}
+              >
+                <RightArrow />
+              </div>
+            )}
           </div>
           <div className={styles.imageContainer} id="imageContainer">
             <div className={styles.image}>

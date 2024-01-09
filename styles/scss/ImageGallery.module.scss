@@ -101,3 +101,13 @@
     max-width: 1200px;
   }
 }
+
+@media (max-width: $mobileWidth) {
+  .imageContainer {
+    .image {
+      padding: 0;
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
