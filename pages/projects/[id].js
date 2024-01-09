@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import Head from "next/head";
 import { projectsData } from "../../constants/projectsData";
@@ -50,17 +50,18 @@ export default function ProjectPage({ project }) {
   }
 
   function renderMainImage(mainImage) {
-    if (mainImage.endsWith("mp4")) {
-      return <video src={mainImage} controls />;
-    } else {
-      return (
+    return (
+      <div
+        className={styles.mainImageContainer}
+        onClick={() => handleImageClick(project.images.length)}
+      >
         <Image
           src={require(`../../public/projects/${project.id}/${mainImage}`)}
           layout="responsive"
           alt={mainImage}
         />
-      );
-    }
+      </div>
+    );
   }
 
   function renderImage(projectId, image) {
@@ -69,15 +70,14 @@ export default function ProjectPage({ project }) {
         src={require(`../../public/projects/${projectId}/${image}`)}
         alt={image}
         layout="responsive"
-        objectFit="scale-down"
       />
     );
   }
 
   function handleImageClick(index) {
-    // setGalleryIndex(index);
-    // setShowGallery(true);
-    // document.getElementsByTagName("body")[0].classList.add("no-scroll");
+    setGalleryIndex(index);
+    setShowGallery(true);
+    document.getElementsByTagName("body")[0].classList.add("no-scroll");
   }
 
   function handleImageGalleryClose() {
@@ -96,7 +96,11 @@ export default function ProjectPage({ project }) {
       {showGallery && (
         <ImageGallery
           projectId={project.id}
-          images={project.images}
+          images={
+            project.mainImage
+              ? [...project.images, project.mainImage]
+              : project.images
+          }
           show={showGallery}
           setShow={setShowGallery}
           setClose={handleImageGalleryClose}

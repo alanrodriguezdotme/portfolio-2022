@@ -1,3 +1,5 @@
+@import "base";
+
 .imageGallery {
   width: 100vw;
   height: 100vh;
@@ -11,12 +13,51 @@
   z-index: 1000;
 }
 
+.button {
+  cursor: pointer;
+
+  svg {
+    fill: $secondary;
+  }
+
+  &:hover {
+    svg {
+      fill: $primary;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
+  animation: fadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+
+  &.close {
+    animation: fadeOut 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
 
 .main {
@@ -26,6 +67,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-delay: 0.3s;
+  animation: fadeIn 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+
+  &.close {
+    animation: fadeOut 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
 
 .controls {
@@ -42,10 +91,13 @@
   align-items: center;
   width: 100%;
   flex: 1;
+  overflow: auto;
 
   .image {
     position: relative;
     width: 100%;
     height: 100%;
+    padding: 20px;
+    max-width: 1200px;
   }
 }

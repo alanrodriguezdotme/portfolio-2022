@@ -90,6 +90,10 @@
     width: calc(50% - 15px);
   }
 
+  .mainImageContainer {
+    cursor: pointer;
+  }
+
   .images {
     column-count: 2;
     column-gap: 30px;
@@ -102,6 +106,7 @@
   .thumbnail {
     -webkit-column-break-inside: avoid;
     padding-bottom: 30px;
+    cursor: pointer;
   }
 }
 
