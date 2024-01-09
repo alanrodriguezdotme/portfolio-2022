@@ -10,7 +10,7 @@ import Tooltip from "../../components/Tooltip";
 import Image from "next/image";
 import ProjectCaseStudy from "./ProjectCaseStudy";
 import Script from "next/script";
-import ImageView from "../../components/ImageView";
+import ImageGallery from "../../components/ImageGallery";
 
 export const getStaticPaths = async () => {
   const paths = projectsData.map((project) => ({
@@ -80,7 +80,7 @@ export default function ProjectPage({ project }) {
     // document.getElementsByTagName("body")[0].classList.add("no-scroll");
   }
 
-  function handleImageViewClose() {
+  function handleImageGalleryClose() {
     setShowGallery(false);
     document.getElementsByTagName("body")[0].classList.remove("no-scroll");
   }
@@ -94,12 +94,12 @@ export default function ProjectPage({ project }) {
         <meta name="description" content={project.description} />
       </Head>
       {showGallery && (
-        <ImageView
+        <ImageGallery
           projectId={project.id}
           images={project.images}
           show={showGallery}
           setShow={setShowGallery}
-          setClose={handleImageViewClose}
+          setClose={handleImageGalleryClose}
           index={galleryIndex}
         />
       )}

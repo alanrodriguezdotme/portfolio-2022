@@ -1,11 +1,11 @@
-import styles from "../styles/scss/ImageView.module.scss";
+import styles from "../styles/scss/ImageGallery.module.scss";
 import LeftArrow from "../public/icons/arrow-left-bold.svg";
 import RightArrow from "../public/icons/arrow-right-bold.svg";
 import Close from "../public/icons/x-bold.svg";
 import { useState } from "react";
 import Image from "next/image";
 
-export default function ImageView({
+export default function ImageGallery({
   projectId,
   images,
   show,
@@ -16,7 +16,7 @@ export default function ImageView({
 
   return (
     show && (
-      <div className={styles.imageView}>
+      <div className={styles.imageGallery}>
         <div className={styles.overlay} />
         <div className={styles.main}>
           <div className={styles.controls}>
